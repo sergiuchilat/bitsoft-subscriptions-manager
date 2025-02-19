@@ -61,15 +61,11 @@ class SubscriptionsRepository {
             return null
         }
 
-        subscriptionToUpdate = SubscriptionItemDTO(
-            id,
-            subscription.userId,
-            subscription.startDate,
-            subscription.endDate,
-            subscription.nextBillingDate,
-            subscription.isActive,
-            subscription.serviceId,
-            subscription.serviceType
+        subscriptionToUpdate = subscriptionToUpdate.copy(
+            userId = subscription.userId,
+            endDate = subscription.endDate,
+            nextBillingDate = subscription.nextBillingDate,
+            isActive = subscription.isActive
         )
 
         subscriptions = subscriptions.map {

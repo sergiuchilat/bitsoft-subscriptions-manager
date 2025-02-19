@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
 
 @Service
-class SubscriptionsServices {
+class SubscriptionsService {
 
     var subscriptionsRepository = SubscriptionsRepository()
 

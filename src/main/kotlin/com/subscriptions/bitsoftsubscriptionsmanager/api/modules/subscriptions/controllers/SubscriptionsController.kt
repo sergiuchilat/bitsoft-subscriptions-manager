@@ -3,7 +3,7 @@ package com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.
 import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.dto.response.SubscriptionItemDTO
 import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.dto.payload.SubscriptionCreateDTO
 import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.dto.payload.SubscriptionUpdateDTO
-import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.services.SubscriptionsServices
+import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.services.SubscriptionsService
 import org.springframework.http.ResponseEntity
 import jakarta.validation.Valid
 import org.springframework.web.bind.annotation.DeleteMapping
@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("subscriptions")
+@RequestMapping()
 
 class SubscriptionsController {
 
-    private val subscriptionsServices = SubscriptionsServices()
+    private val subscriptionsServices = SubscriptionsService()
 
     @GetMapping()
     fun getSubscriptions(): List<SubscriptionItemDTO> {

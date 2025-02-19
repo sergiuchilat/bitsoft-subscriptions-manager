@@ -7,7 +7,6 @@ import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.r
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
-import org.springframework.web.server.ResponseStatusException
 
 @Service
 class SubscriptionsServices {
@@ -15,7 +14,7 @@ class SubscriptionsServices {
     var subscriptionsRepository = SubscriptionsRepository()
 
     fun getSubscriptions(): List<SubscriptionItemDTO> {
-        return subscriptionsRepository.getAllSubscriptions();
+        return subscriptionsRepository.getAllSubscriptions()
     }
 
     fun getSubscription(id: Int): ResponseEntity<SubscriptionItemDTO> {

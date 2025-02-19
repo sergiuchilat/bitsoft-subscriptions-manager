@@ -2,7 +2,6 @@ package com.subscriptions.bitsoftsubscriptionsmanager.api.subscriptions.exceptio
 
 import ApiErrorResponse
 import jakarta.servlet.http.HttpServletRequest
-import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.MethodArgumentNotValidException

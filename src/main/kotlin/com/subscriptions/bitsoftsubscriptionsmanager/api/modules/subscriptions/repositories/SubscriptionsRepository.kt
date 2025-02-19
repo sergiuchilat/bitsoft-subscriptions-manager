@@ -3,8 +3,6 @@ package com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.
 import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.dto.payload.SubscriptionCreateDTO
 import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.dto.payload.SubscriptionUpdateDTO
 import com.subscriptions.bitsoftsubscriptionsmanager.api.modules.subscriptions.dto.response.SubscriptionItemDTO
-import org.springframework.http.HttpStatus
-import org.springframework.web.server.ResponseStatusException
 import java.time.LocalDate
 
 class SubscriptionsRepository {
